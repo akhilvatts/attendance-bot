@@ -35,11 +35,6 @@ class AttendanceBot():
         signIn_btn = self.driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div[1]/div/table/tbody/tr[5]/td/button[1]')
         signIn_btn.click()
 
-        sleep(8)
-
-        signOut_btn = self.driver.find_element_by_xpath('/html/body/div[2]/div[2]/div[3]/div[1]/div/div/div[1]/div/table/tbody/tr[5]/td/button[2]')
-        signOut_btn.click()
-
         self.driver.close()
         self.driver.switch_to.window(self.driver.window_handles[0])
 
