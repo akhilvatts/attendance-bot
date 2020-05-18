@@ -9,6 +9,8 @@ to run:
 ``` 
  username = 'your_username'
  password = 'your_password'
+ portal = 'your_portal'
+ attnportal = 'attendance_portal'
 ```
 
 Cheers!
