@@ -11,14 +11,14 @@ class AttendanceBot():
         self.driver.get(portal)
 
         sleep(2)
-
-        username_in = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div[2]/main/div/o-auth/section/div/app-login/section/div/div/form/div[1]/gt-icon-input/div/input')
+        
+        username_in = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div/main/div/section/div[1]/o-auth/section/div/app-login/section/div/div/div/form/div[1]/div/input')
         username_in.send_keys(username)
 
-        password_in = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div[2]/main/div/o-auth/section/div/app-login/section/div/div/form/div[2]/gt-icon-input/div/input')
+        password_in = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div/main/div/section/div[1]/o-auth/section/div/app-login/section/div/div/div/form/div[2]/div/input')
         password_in.send_keys(password)
 
-        login_btn = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div[2]/main/div/o-auth/section/div/app-login/section/div/div/form/div[3]/button/h6')
+        login_btn = self.driver.find_element_by_xpath('/html/body/app-root/uas-portal/div/div/main/div/section/div[1]/o-auth/section/div/app-login/section/div/div/div/form/button')
         login_btn.click()
 
         sleep(8)
